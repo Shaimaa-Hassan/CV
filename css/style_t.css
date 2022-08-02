@@ -1,0 +1,135 @@
+/* 1.global style  */
+/* 2.common style */
+/* general style.............................................................................. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* small screen */
+@media (min-width:768px){
+    .container {
+        width: 750px;
+    }
+}
+/* medium screen */
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+/* large screen */
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+@media (max-width:550px) {
+    .profile .right{
+        margin-top: 25px !important;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about .content .right p{
+        font-size: 14px !important;
+        flex-direction: column;
+    }
+    .about .content{
+        grid-gap: 5rem !important;
+    }
+    .about .content .right p span:nth-child(1)::after{
+      display: none;
+    }
+    .skills .content .left .inner_right{
+        padding-left: 0 !important;
+        padding-top: 20px;
+    }
+   .portfolio .tabs ul{
+    justify-content: space-between !important;
+    align-items: center;
+    flex-wrap: wrap;
+   }
+   .portfolio .tabs ul li a{
+ font-size: 14px !important;
+}
+.portfolio .tabs ul li {
+margin-bottom: 20px;
+}
+
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    /* height: 5000px; */
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* :root{ */
+    /* --main-color:; */
+    /* --main-transition:; */
+    /* --section-padding:; */
+    /* --bg-color:; */
+/* } */
+
+.profile{
+clip-path:polygon(0% 0%, 100% 0%, 100% 80%, 25% 100%, 0% 80%);
+background-color: black;
+padding-top: 40px;
+padding-bottom: 70px;
+/* clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80%); */
+
+}
+
+.profile .left .cd-headline.loading-bar .cd-words-wrapper::after{
+    background: linear-gradient(to right, rgb(128, 128, 190), rgb(218, 98, 98));
+}
+/* /////////////////////////////////////////// */
+.section_heading::after{
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 3px;
+    /* background-color: ; */
+    top: 28px;
+    left: 0;
+    border: 1px dotted rgb(196, 113, 113);
+}
+/* ///////////////////////////////////////////////////////// */
+.about .content .right p span:nth-child(1)::after{
+    position: absolute;
+    content: ":";
+    top: 0;
+    right:0;
+}
+/* ////////////////////////////////////////////////////// */
+.skills .content .left .item::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid blue;
+    border-radius: 50%;
+    margin-left: -22px;    
+
+}
+
+/* //////////////////////////////////////////////////////////// */
+
+.active{
+    border-bottom: 2px solid #20294a !important;
+    transition: all 0.5s ease-in-out;
+}
+/* /////////////////////////////////////////////////// */
+input:focus, textarea:focus{
+    border-color:lightblue !important;
+    outline: none;
+}
+
