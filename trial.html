@@ -38,7 +38,7 @@
                 <span class="letter-show"></span>
             </div>
             <div>
-                <button class="bg-primary border-0 py-2 px-3 text-white fs-6 rounded"><i class="fa-solid fa-print"></i>
+                <button class="print bg-primary border-0 py-2 px-3 text-white fs-6 rounded"><i class="fa-solid fa-print"></i>
                     print</button>
             </div>
         </div>
@@ -48,8 +48,11 @@
         <section class="profile text-white d-flex flex-wrap align-items-center justify-content-between px-5 mt-5" id="profile_ripple">
             <div class="left d-flex align-items-center" style="flex: 2;">
                 <div class="avatar-block position-relative me-3">
-                    <img class="rounded-circle" style="object-fit: cover; width: 128px; height:128px;" src="pictures/images/user.jpg" alt="">
-                    <span class="position-absolute bg-primary rounded-circle lh-lg text-center text-white " style="right: 4px; bottom:4px; width: 32px; height: 32px; box-shadow: 0px 0px 20px 0px rgba(32, 41, 54, 0.05); cursor: pointer;"><i class="fa-solid fa-camera"></i></span>
+                    <img class="imgup rounded-circle" style="object-fit: cover; width: 128px; height:128px;" src="pictures/images/user.jpg" alt="">
+                    <div class="up">
+                    <label class=" position-absolute d-block bg-primary rounded-circle lh-lg text-center text-white " for="upload" style="right: 4px; bottom:4px; width: 32px; height: 32px; box-shadow: 0px 0px 20px 0px rgba(32, 41, 54, 0.05); cursor: pointer;"><i class="fa-solid fa-camera"></i></label>
+                    <input class=" d-none" type="file" id="upload">
+                </div>
                 </div>
                 <div class="text-capitalize">
                     <h2 class="text-white-50 fs-3 fw-bold mb-3">shaimaa hassan</h2>
@@ -84,15 +87,16 @@
         </section>
         <section class="about p-5">
             <h2 class="section_heading position-relative text-capitalize fs-5 fw-bold text-white mb-5" style="text-shadow:0 0 1px rgba(40, 54, 90, 0.1) ;">about us!</h2>
-            <div class="content row " style="grid-gap: 12rem;">
+            <div class="content row " style="grid-gap:9rem;">
                 <div class="left col-lg-5 col-sm-12">
                     <h2 class="text-capitalize fs-5 fw-bold lh-base mb-2 text-primary  ">i'm shaimaa hassan</h2>
                     <p class="fs-6 lh-base mb-1" style="letter-spacing: 0.1px;" >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                          Dolore consectetur autem sit, tempore sed totam, officiis
                           consequatur aliquid velit dolor molestias
                          fuga aperiam illo ad cumque facere eligendi assumenda odit.</p>
-                         <button class="text-capitalize py-1 px-2 outline-dark btn-dark text-primary border-0 fs-6 lh-lg rounded mt-2" >download cv</button>
-                </div>
+                         <a href="#" download="photo" class="download text-capitalize py-1 px-2 outline-dark btn-dark text-primary border-0 fs-6 lh-lg rounded mt-2" >download cv</a>
+                        <img src="photoproj/cv.png" class="image d-none" alt="cv">
+                        </div>
                 <div class="right text-capitalize col-lg-5 col-sm-12">
                     <p class="lh-base fs-6 mb-2 d-flex" style="letter-spacing: 0.1px;">
                         <span class="fw-bold pe-2 position-relative" style="width: 160px;">name </span><span class="ps-2">shaimaa hassan</span>
@@ -295,43 +299,43 @@
                     </div>
                     <div class="portfolio_wrapper d-flex mt-5">
                         <div class=" item design p-0" style="flex: 0 0 33.333333%; max-width:33.333333%">
-                            <a class="magnify" href="pictures/images/1.jpg" title="something">
-                                <img style="width: 100%; height:100%; object-fit:cover; display:block;" src="pictures/images/1.jpg" alt="">
+                            <a class="magnify" href="photoproj/pro1.png" title="project one">
+                                <img style="width: 100%; height:100%; object-fit:cover; display:block;" src="photoproj/pro1.png" alt="">
                             </a>
                         </div>
                         <div class=" item frontend p-0" style="flex: 0 0 33.333333%; max-width:33.333333%">
-                            <a class="magnify" href="pictures/images/2.jpg" title="something">
-                                <img style="width: 100%; height:100%; object-fit:cover; display:block;" src="pictures/images/2.jpg" alt="">
+                            <a class="magnify" href="photoproj/pro2.png" title="project two">
+                                <img style="width: 100%; height:100%; object-fit:cover; display:block;" src="photoproj/pro2.png" alt="">
                             </a>
                         </div>
                         <div class=" item backend p-0" style="flex: 0 0 33.333333%; max-width:33.333333%">
-                            <a class="magnify" href="pictures/images/3.jpg" title="something">
-                                <img style="width: 100%; height:100%; object-fit:cover; display:block;" src="pictures/images/3.jpg" alt="">
+                            <a class="magnify" href="photoproj/pro3.png" title="project three">
+                                <img style="width: 100%; height:100%; object-fit:cover; display:block;" src="photoproj/pro3.png" alt="">
                             </a>
                         </div>
                         <div class=" item design p-0" style="flex: 0 0 33.333333%; max-width:33.333333%">
-                            <a class="magnify" href="pictures/images/4.jpg" title="something">
-                                <img style="width: 100%; height:100%; object-fit:cover; display:block;" src="pictures/images/4.jpg" alt="">
+                            <a class="magnify" href="photoproj/pro4.png" title="project4">
+                                <img style="width: 100%; height:100%; object-fit:cover; display:block;" src="photoproj/pro4.png" alt="">
                             </a>
                         </div>
                         <div class=" item frontend p-0" style="flex: 0 0 33.333333%; max-width:33.333333%">
-                            <a class="magnify" href="pictures/images/5.jpg" title="something">
-                                <img style="width: 100%; height:100%; object-fit:cover; display:block;" src="pictures/images/5.jpg" alt="">
+                            <a class="magnify" href="photoproj/pro5.png" title="project5">
+                                <img style="width: 100%; height:100%; object-fit:cover; display:block;" src="photoproj/pro5.png" alt="">
                             </a>
                         </div>
                         <div class=" item backend p-0" style="flex: 0 0 33.333333%; max-width:33.333333%">
-                            <a class="magnify" href="pictures/images/6.jpg" title="something">
-                                <img style="width: 100%; height:100%; object-fit:cover; display:block;" src="pictures/images/6.jpg" alt="">
+                            <a class="magnify" href="photoproj/pro6.png" title="project6">
+                                <img style="width: 100%; height:100%; object-fit:cover; display:block;" src="photoproj/pro6.png" alt="">
                             </a>
                         </div>
                         <div class=" item design p-0" style="flex: 0 0 33.333333%; max-width:33.333333%">
-                            <a class="magnify" href="pictures/images/1.jpg" title="something">
-                                <img style="width: 100%; height:100%; object-fit:cover; display:block;" src="pictures/images/1.jpg" alt="">
+                            <a class="magnify" href="photoproj/pro7.png" title="project7">
+                                <img style="width: 100%; height:100%; object-fit:cover; display:block;" src="photoproj/pro7.png" alt="">
                             </a>
                         </div>
                         <div class=" item frontend p-0" style="flex: 0 0 33.333333%; max-width:33.333333%">
-                            <a class="magnify" href="pictures/images/2.jpg" title="something">
-                                <img style="width: 100%; height:100%; object-fit:cover; display:block;" src="pictures/images/2.jpg" alt="">
+                            <a class="magnify" href="photoproj/pro8.png" title="project8">
+                                <img style="width: 100%; height:100%; object-fit:cover; display:block;" src="photoproj/pro8.png" alt="">
                             </a>
                         </div>
                     </div>

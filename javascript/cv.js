@@ -69,4 +69,35 @@ function content(){
 
 }
 setInterval(content, 250);
-///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////print
+document.querySelector(".print").addEventListener("click", function(){
+    print();
+});
+/////////////////////////////////////////////////////download
+document.querySelector(".download").addEventListener("click", function(){
+    document.querySelector(".download").href= document.querySelector(".image").src;
+});
+///////////////////////////////////////////////////upload and save in localstorage and retrive image
+var imageup =document.querySelector(".imgup");
+var upload =document.getElementById("upload");
+
+upload.onchange= function(){
+   
+    let file = new FileReader();// convert image file to data url
+    file.readAsDataURL(upload.files[0]);//input upload in files location
+    file.onload =function(){// locate photo file after it loaded in img tag src 
+      localStorage.setItem("image", file.result)
+}
+
+};
+
+document.addEventListener("DOMContentLoaded", ()=>{
+    var imgurl = localStorage.getItem("image");
+    if(imgurl){
+        imageup.setAttribute("src", imgurl);
+    }
+})
+
+
+ 
+
